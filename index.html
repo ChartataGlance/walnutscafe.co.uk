@@ -1,202 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WalnutsCafe</title>
 </head>
+
 <body>
+    <h1 class="pos-center-abs">WalnutsCafe</h1>
+    <h1 class="pos-center-abs" id="demo"></h1>
+    <script>
+        const x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+    </script>
+    
     <center>
-    <div class="hightable">
-        <div class="table">
-            <table class="tg">
-                <thead>
-                    <tr>
-                        <th class="tg-q4qp">Mon</th>
-                        <th class="tg-0lax"><select>
-                                <option>Rob</option>
-                                <option>_</option>
-                            </select></th>
-                        <th class="tg-0lax"><select>
-                                <option>Mus</option>
-                                <option>_</option>
-                            </select></th>
-                        <th class="tg-0lax"><select>
-                                <option>Ahmd</option>
-                                <option>hway</option>
-                                <option>_</option>
-                            </select></th>
-                        <th class="tg-0lax"><select>
-                                <option>Sai</option>
-                                <option>_</option>
-                            </select></th>
-                        <th class="tg-0lax"><select>
-                                <option></option>
-                                <option>Ism</option>
-                                <option>Ism1</option>
-                                
-                            </select></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tue</td>
-                        <td class="tg-alz1"><select>
-                                <option>Rob</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option>Mus</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option>Ahmd</option>
-                                <option>hway</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option>Sai</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option></option>
-                                <option>Ism</option>
-                                <option>Ism1</option>
-                                
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td class="tg-0lax">Wed</td>
-                        <td class="tg-0lax"><select>
-                                <option>Rob</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option>Mus</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option>Ahmd</option>
-                                <option>hway</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option>Sai</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option></option>
-                                <option>Ism</option>
-                                <option>Ism1</option>
-                                
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td>Thu</td>
-                        <td class="tg-alz1"><select>
-                                <option>Rob</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option>Mus</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option>Ahmd</option>
-                                <option>hway</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option>Sai</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-alz1"><select>
-                                <option></option>
-                                <option>Ism</option>
-                                <option>Ism1</option>
-                                
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td class="tg-0lax">Fri</td>
-                        <td class="tg-0lax"><select>
-                                <option>Rob</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option>Mus</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option>Ahmd</option>
+        <div class="hightable">
+            <div class="table">
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-q4qp">Mon</th>
+                            <th class="tg-0lax"><select>
+                                    <option>Rob</option>
+                                    <option>_</option>
+                                </select></th>
+                            <th class="tg-0lax"><select>
+                                    <option>Mus</option>
+                                    <option>_</option>
+                                </select></th>
+                            <th class="tg-0lax"><select>
+                                    <option>Ahmd</option>
+                                    <option>hway</option>
+                                    <option>_</option>
+                                </select></th>
+                            <th class="tg-0lax"><select>
+                                    <option>Sai</option>
+                                    <option>_</option>
+                                </select></th>
+                            <th class="tg-0lax"><select>
+                                    <option></option>
+                                    <option>Ism</option>
+                                    <option>Ism1</option>
 
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option>Sai</option>
-                                <option>_</option>
-                            </select></td>
-                        <td class="tg-0lax"><select>
-                                <option></option>
-                                <option>Ism</option>
-                                <option>Ism1</option>
-                                
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td class="satsun">Sat</td>
-                        <td class="satsun tg-alz1"><select>
-                                <option>Rob</option>
-                                <option></option></td>
-                        <td class="satsun tg-alz1"><select>
-                                <option>Mus</option>
-                                <option></option>
-                        </td>
-                        <td class="satsun tg-alz1"><select>
-                                <option>Ahmd</option>
-                                <option></option></td>
-                        <td class="satsun tg-alz1"><select>
-                                <option>Sai</option>
-                                <option></option>
-                        </td>
-                        <td class="satsun tg-alz1"><select>
-                                <option></option>
-                                <option>Ism</option>
-                                <option>Ism1</option>
-                                
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="satsun">Sun</td>
-                        <td class="satsun"><select>
-                                <option>Rob</option>
-                                <option></option></td>
-                        <td class="satsun"><select>
-                                <option>Mus</option>
-                                <option></option>
-                        </td>
-                        <td class="satsun"><select>
-                                <option>Ahmd</option>
-                                <option></option></td>
-                        <td class="satsun"><select>
-                                <option>Sai</option>
-                                <option></option>
-                        </td>
-                        <td class="satsun"><select>
-                                <option></option>
-                                <option>Ism</option>
-                                <option>Ism1</option>
-                                
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                                </select></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tue</td>
+                            <td class="tg-alz1"><select>
+                                    <option>Rob</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option>Mus</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option>Ahmd</option>
+                                    <option>hway</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option>Sai</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option></option>
+                                    <option>Ism</option>
+                                    <option>Ism1</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Wed</td>
+                            <td class="tg-0lax"><select>
+                                    <option>Rob</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option>Mus</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option>Ahmd</option>
+                                    <option>hway</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option>Sai</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option></option>
+                                    <option>Ism</option>
+                                    <option>Ism1</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>Thu</td>
+                            <td class="tg-alz1"><select>
+                                    <option>Rob</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option>Mus</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option>Ahmd</option>
+                                    <option>hway</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option>Sai</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-alz1"><select>
+                                    <option></option>
+                                    <option>Ism</option>
+                                    <option>Ism1</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Fri</td>
+                            <td class="tg-0lax"><select>
+                                    <option>Rob</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option>Mus</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option>Ahmd</option>
+
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option>Sai</option>
+                                    <option>_</option>
+                                </select></td>
+                            <td class="tg-0lax"><select>
+                                    <option></option>
+                                    <option>Ism</option>
+                                    <option>Ism1</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="satsun">Sat</td>
+                            <td class="satsun tg-alz1"><select>
+                                    <option>Rob</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun tg-alz1"><select>
+                                    <option>Mus</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun tg-alz1"><select>
+                                    <option>Ahmd</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun tg-alz1"><select>
+                                    <option>Sai</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun tg-alz1"><select>
+                                    <option></option>
+                                    <option>Ism</option>
+                                    <option>Ism1</option>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="satsun">Sun</td>
+                            <td class="satsun"><select>
+                                    <option>Rob</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun"><select>
+                                    <option>Mus</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun"><select>
+                                    <option>Ahmd</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun"><select>
+                                    <option>Sai</option>
+                                    <option></option>
+                            </td>
+                            <td class="satsun"><select>
+                                    <option></option>
+                                    <option>Ism</option>
+                                    <option>Ism1</option>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
 
+            </div>
         </div>
-    </div>
 
-</center>
+    </center>
 </body>
-</html>
 
+</html>
