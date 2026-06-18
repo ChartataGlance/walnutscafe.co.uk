@@ -1,4 +1,0 @@
-# Cloudflare Pages / Netlify alternative redirects
-# GitHub Pages does not read this file. Use Cloudflare Rules if staying on GitHub Pages.
-https://www.walnutscafe.co.uk/* https://walnutscafe.co.uk/:splat 301
-/walnutscafe/* /:splat 301
